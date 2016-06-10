@@ -1,0 +1,130 @@
+@import 'variables';
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+@import "../../bower_components/basscss-sass/scss/_padding.scss";
+@import "../../bower_components/basscss-sass/scss/_margin.scss";
+@import "../../bower_components/basscss-sass/scss/_flexbox.scss";
+
+// Base
+@import "base/**/*.scss";
+
+body {
+  background-color: #F9F9F9;
+  background-image: url(../images/linedpaper_@2X.png);
+  background-size: 412px 300px;
+  padding-top: 10px;
+  border-top: 5px solid #000;
+}
+
+.container {
+  max-width: 500px;
+}
+
+h1 {
+  font-style: italic;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.option {
+  width: percentage(1/2);
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 15px;
+  animation-duration: 1000ms;
+  animation-fill-mode: both;
+  animation-timing-function: $cubic-bezier;
+  animation-name: fadeInUp;
+  transition: box-shadow 300ms ease;
+  &:hover {
+    cursor: pointer;
+    // box-shadow: 1px 1px 12px rgba(0,0,0,0.2);
+  }
+}
+
+@for $i from 1 through 10 {
+  $delay-start: 50;
+  $delay: 100ms;
+  .option:nth-child(#{$i}) {
+    animation-delay: ($delay * $i + $delay-start) !important;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 12px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.option-btn {
+  display: block;
+  background-color: #fff;
+  background-image: url(../images/leaf-broad.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  padding-top: 100px;
+  width: 100%;
+  border: 1px solid #eee;
+}
+
+.option-text {
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  color: #999;
+  font-family: $font-family-sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.result {
+  border: 1px solid #eee;
+  background-color: #fff;
+  flex: auto;
+  background-image: url(../images/tree.jpg);
+  padding-top: 130px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  width: percentage(1/2);
+  // margin-left: 10px;
+  // margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+.result-title {
+  background: #000;
+  color: #fff;
+  font-size: 20px;
+  padding: 5px;
+}

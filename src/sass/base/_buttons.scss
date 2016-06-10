@@ -1,0 +1,16 @@
+.btn {
+  border-radius: 0;
+}
+
+.btn-primary {
+  background: #000;
+  font-weight: 900;
+  letter-spacing: 9px;
+  text-transform: uppercase;
+  border: none;
+  font-size: 20px;
+  padding: 10px 50px;
+  &:hover {
+
+  }
+}

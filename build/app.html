@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Which NZ Native Plant</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container text-center">
+        <div id="app">
+            <div v-show="!resultIndex">
+                <h1 class="h2 mb3 mt0">{{questions[currentQuestionIndex].questionText}}</h1>
+
+                <div class="options">
+                    <div class="option" v-for="optionIndex in questions[currentQuestionIndex].options">
+
+                        <div v-show="!options[optionIndex].result"@click="goTo(options[optionIndex].nextQuestion, options[optionIndex].optionText)" class="option-btn">
+                            <div class="option-text">
+                                {{options[optionIndex].optionText}}
+                            </div>
+                        </div>
+
+                        <div v-show="options[optionIndex].result" @click="goToResult(options[optionIndex].result, options[optionIndex].optionText)" class="option-btn">
+                            <div class="option-text">
+                                {{options[optionIndex].optionText}}
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div v-if="resultIndex" >
+                <h1 class="h2 mb3 mt0">Answer</h1>
+                <div class="results">
+                    <div class="result" v-for="item in result[resultIndex].options">
+                        <div class="result-title">
+                            {{resultOptions[item].commonName}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+ <!--            <ul class="breadcrumbs">
+                <li v-for="item in breadcrumbs">{{ item }}</li>
+            </ul> -->
+
+            <!-- <button @click="goBack()" class="btn btn-default">Go back</button> -->
+            <div class="py3">
+                <a href="index.html" class="btn btn-default">Start Again</a>
+            </div>
+
+
+        </div>
+    </div>
+
+
+  <script src="js/app.js"></script>
+</body>
+</html>

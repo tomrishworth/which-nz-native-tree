@@ -1,0 +1,25 @@
+{
+  "name": "static",
+  "version": "0.0.0",
+  "authors": [
+    "Tom Rishworth <tom@webscope.co.nz>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "*",
+    "vue": "~1.0.24",
+    "gsap": "greensock#~1.18.5",
+    "basscss-sass": "~4.0.0"
+  }
+}
