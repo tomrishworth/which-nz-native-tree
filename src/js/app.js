@@ -3,7 +3,7 @@ new Vue({
 
     data: {
         currentQuestionIndex: '1',
-        previousIndex: '',
+        previousIndex: [],
         resultIndex: '',
         breadcrumbs: [],
         questions: {
@@ -352,11 +352,11 @@ new Vue({
         resultOptions: {
             'Kohuhu':  {
                 commonName: 'Kohuhu',
-                type: 'Tree'
+                imageUrl: 'http://www.atreeaday.com/atreeaday/Pittosporum_tenuifolium_files/shapeimage_1.png'
             },
             'Mapou': {
                 commonName: 'Mapou',
-                type: 'Shrub'
+                imageUrl:'http://www.tiritirimatangi.org.nz/images/Plants/Mapou.JPG'
             },
             'Rangiora': {
                 commonName: 'Rangiora',
@@ -500,31 +500,50 @@ new Vue({
 
 
     methods: {
-        // stepCounter: function() {
-        //     this.step += 1;
-        // },
 
-        goTo: function(questionIndex, currentQuestionText) {
-
+        goTo: function(questionIndex, currentQuestionText, currentQuestion) {
             this.currentQuestionIndex = questionIndex;
-
-            this.breadcrumbs.push(currentQuestionText);
+            this.previousIndex.push(currentQuestion);
+            // this.breadcrumbs.push(currentQuestionText);
         },
 
-        goToResult: function(blah, currentQuestionText){
-            this.resultIndex = blah;
-
-            this.breadcrumbs.push(currentQuestionText);
+        goToResult: function(optionResult, currentQuestionText, currentQuestion){
+            this.resultIndex = optionResult;
+            this.previousIndex.push(currentQuestion);
+            this.currentQuestionIndex = '';
+            // this.breadcrumbs.push(currentQuestionText);
         },
 
-        // goBack: function() {
-        //     var previousIndex = this.breadcrumbs.pop();
-        //     this.stepNumber = this.breadcrumbs.length;
-        //     this.currentQuestionIndex = previousIndex;
-        // }
+        goBack: function() {
+            if(this.resultIndex) {
+                this.currentQuestionIndex = this.previousIndex.pop();
+                this.resultIndex = '';
+            } else {
+                this.currentQuestionIndex = this.previousIndex.pop();
+            }
+        }
 
 
     },
+
+    computed: {
+        showPrevious: function() {
+            if (this.currentQuestionIndex == '1') {
+                return false;
+            }
+
+            return true;
+        },
+
+        showAnswers: function() {
+            if (this.resultIndex.length) {
+                return true;
+            }
+
+            return false;
+        }
+
+    }
 
 
 });

@@ -11,19 +11,20 @@
 <body>
     <div class="container text-center">
         <div id="app">
-            <div v-show="!resultIndex">
+
+            <div v-show="!showAnswers">
                 <h1 class="h2 mb3 mt0">{{questions[currentQuestionIndex].questionText}}</h1>
 
                 <div class="options">
-                    <div class="option" v-for="optionIndex in questions[currentQuestionIndex].options">
+                    <div class="option card animation-target" v-for="optionIndex in questions[currentQuestionIndex].options">
 
-                        <div v-show="!options[optionIndex].result"@click="goTo(options[optionIndex].nextQuestion, options[optionIndex].optionText)" class="option-btn">
+                        <div v-show="!options[optionIndex].result" @click="goTo(options[optionIndex].nextQuestion, options[optionIndex].optionText, currentQuestionIndex)" class="option-btn">
                             <div class="option-text">
                                 {{options[optionIndex].optionText}}
                             </div>
                         </div>
 
-                        <div v-show="options[optionIndex].result" @click="goToResult(options[optionIndex].result, options[optionIndex].optionText)" class="option-btn">
+                        <div v-show="options[optionIndex].result" @click="goToResult(options[optionIndex].result, options[optionIndex].optionText, currentQuestionIndex)" class="option-btn">
                             <div class="option-text">
                                 {{options[optionIndex].optionText}}
                             </div>
@@ -33,27 +34,33 @@
                 </div>
             </div>
 
-            <div v-if="resultIndex" >
+            <div v-if="showAnswers" >
                 <h1 class="h2 mb3 mt0">Answer</h1>
                 <div class="results">
-                    <div class="result" v-for="item in result[resultIndex].options">
+                    <div class="result card" v-for="item in result[resultIndex].options">
                         <div class="result-title">
+                            <img class="img-responsive" src="{{resultOptions[item].imageUrl}}">
                             {{resultOptions[item].commonName}}
                         </div>
                     </div>
                 </div>
             </div>
-
- <!--            <ul class="breadcrumbs">
+<!--
+            <ul class="breadcrumbs">
                 <li v-for="item in breadcrumbs">{{ item }}</li>
-            </ul> -->
+            </ul>
 
-            <!-- <button @click="goBack()" class="btn btn-default">Go back</button> -->
-            <div class="py3">
-                <a href="index.html" class="btn btn-default">Start Again</a>
+
+ -->
+            <div class="flex py3 justify-center">
+                <button v-show="showPrevious" @click="goBack()" class="btn btn-default">Go back</button>
+                <a v-show="currentQuestionIndex != '1'" href="app.html" class="btn btn-default">Start Again</a>
             </div>
 
-
+            <div v-if="previousIndex">Previous Index: {{ previousIndex }}</div>
+            <div>Current Index: {{currentQuestionIndex}}</div>
+            <div>Show Go Back btn: {{ showPrevious }}</div>
+            <div>Show Answers: {{ showAnswers }}</div>
         </div>
     </div>
 
