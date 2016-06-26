@@ -1201,13 +1201,17 @@ textarea {
 
 .btn {
   border-radius: 0;
-  background: #000;
-  font-weight: 900;
-  letter-spacing: 9px;
+  background: #333;
+  font-weight: 500;
+  letter-spacing: 1px;
   text-transform: uppercase;
   border: none;
-  font-size: 20px;
-  padding: 10px 50px; }
+  font-size: 16px;
+  padding: 15px 20px;
+  color: #fff;
+  text-decoration: none; }
+  .btn:hover {
+    background: #000; }
 
 body {
   background-color: #ddd;
@@ -1247,6 +1251,10 @@ body {
 
 .actions {
   background: green; }
+  .actions .btn {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto; }
 
 .option:nth-child(2) {
   -webkit-animation-delay: 100ms !important;
