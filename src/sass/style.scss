@@ -1,36 +1,56 @@
-@import 'variables';
-@import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import '../../bower_components/normalize-css/normalize';
 
-@import "../../bower_components/basscss-sass/scss/_padding.scss";
-@import "../../bower_components/basscss-sass/scss/_margin.scss";
-@import "../../bower_components/basscss-sass/scss/_flexbox.scss";
+@import 'https://fonts.googleapis.com/css?family=Playfair+Display';
+
+@import 'variables';
+// @import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+@import "../../bower_components/basscss-sass/scss/basscss.scss";
+// @import "../../bower_components/basscss-sass/scss/_margin.scss";
+// @import "../../bower_components/basscss-sass/scss/_flexbox.scss";
 
 // Base
 @import "base/**/*.scss";
 
 body {
-  background-color: #F9F9F9;
-  // background-image: url(../images/linedpaper_@2X.png);
-  background-size: 412px 300px;
-  padding-top: 10px;
-  // border-top: 5px solid #000;
+  background-color: #ddd;
+  font-family: "Playfair Display", Georgia, "Times New Roman", Times, serif;
 }
 
-.container {
+.mt-auto {
+  margin-top: auto
+}
+
+.mb-auto {
+  margin-bottom: auto
+}
+
+.app-container {
   max-width: 500px;
-  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .option-btn {
   padding: 15px 20px;
-  background: #fff;
+  background: #333;
+  color: #fff;
   margin-bottom: 5px;
   border: 1px solid #eee;
+  font-size: 20px;
   &:hover {
     cursor: pointer;
     box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.05);
     border-color: #ddd;
   }
+}
+
+.actions {
+  background: green;
 }
 
 // h1 {

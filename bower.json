@@ -20,6 +20,8 @@
     "bootstrap-sass": "*",
     "vue": "~1.0.24",
     "gsap": "greensock#~1.18.5",
-    "basscss-sass": "~4.0.0"
+    "basscss-sass": "~4.0.0",
+    "normalize-strings": "normalize#~1.0.4",
+    "normalize-css": "~4.1.1"
   }
 }
