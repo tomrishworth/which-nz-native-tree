@@ -10,7 +10,7 @@ new Vue({
 
             // Start
             '1': {
-                questionText: 'Start here',
+                questionText: 'Select Leaf Shape',
                 options: ['1', '2', '3', '4', '5', '6', '7']
             },
 
@@ -360,138 +360,183 @@ new Vue({
             },
             'Rangiora': {
                 commonName: 'Rangiora',
+                imageUrl: 'http://ketenewplymouth.peoplesnetworknz.info/image_files/0000/0000/2208/rangiora_leaves.jpg'
             },
             'Taraire': {
                 commonName: 'Taraire',
+                imageUrl: 'http://bigtree.co.nz/wp-content/uploads/2014/08/BEILSCHMIEDIATARAIRENUM2.jpg'
             },
             'Kapuka': {
                 commonName: 'Kapuka',
+                imageUrl: 'http://ketenewplymouth.peoplesnetworknz.info/image_files/0000/0001/3689/Griselinia_littoralis__broadleaf_1-10-2016.JPG'
             },
             'Karaka': {
                 commonName: 'Karaka',
+                imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Corynocarpuslaevigatus012.jpg/250px-Corynocarpuslaevigatus012.jpg'
             },
             'Pate': {
                 commonName: 'Pate',
+                imageUrl: 'http://ketenewplymouth.peoplesnetworknz.info/image_files/0000/0005/4709/Schefflera_digitatal__Pate__Seven_Finger-003.JPG'
             },
             'Whauwhaupaku': {
                 commonName: 'Whauwhaupaku',
+                imageUrl: 'http://www.teara.govt.nz/files/large_images/p-13817-enz.jpg'
             },
             'Puriri': {
                 commonName: 'Puriri',
+                imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/PuririLeaves.jpg/220px-PuririLeaves.jpg'
             },
             'Tanekaha': {
                 commonName: 'Tanekaha',
+                imageUrl: 'http://ketenewplymouth.peoplesnetworknz.info/image_files/0000/0006/8379/Phyllocladus_trichomanoides__Tanekaha__2_.JPG'
             },
             'Silver Beech': {
                 commonName: 'Silver Beech',
+                imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/LophozoniaMenziesiiFoliage.jpg/220px-LophozoniaMenziesiiFoliage.jpg'
             },
             'Putaputaweta': {
                 commonName: 'Putaputaweta',
+                imageUrl: 'http://ketenewplymouth.peoplesnetworknz.info/image_files/0000/0001/5574/marble_leaf__Carpodeus_serratus__Putuputuweta-4.JPG'
             },
             'Hard Beech': {
                 commonName: 'Hard Beech',
+                imageUrl: 'http://ketenewplymouth.peoplesnetworknz.info/image_files/0000/0001/1699/Red_Beech_leaves_Nothofagus_fusca-2.JPG'
             },
             'Red Beech': {
                 commonName: 'Red Beech',
+                imageUrl: 'https://static.inaturalist.org/photos/1371792/medium.jpg?1444754057'
             },
             'Kaikomako': {
                 commonName: 'Kaikomako',
+                imageUrl: 'https://www.southernwoods.co.nz/uploads/Shoppingcart/product-606-2.jpg'
             },
             'Houhere': {
                 commonName: 'Houhere',
+                imageUrl: 'http://www.nzplantpics.com/pics_trees/hoheria_photography/hoheria_glabrata_small_08.jpg'
             },
             'Hinau': {
                 commonName: 'Hinau',
+                imageUrl: 'https://static.inaturalist.org/photos/1184116/medium.jpg?1444489669'
             },
             'Kotukutuku': {
-                commonName: 'Kotukutuku'
+                commonName: 'Kotukutuku',
+                imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Fuchsia_excorticata.jpg/240px-Fuchsia_excorticata.jpg'
             },
             'Ngaio': {
                 commonName: 'Ngaio',
+                imageUrl: 'http://ketenewplymouth.peoplesnetworknz.info/image_files/0000/0007/3564/Myoporum_insulare__Australian_ngaio-002.JPG'
             },
             'Mahoe': {
                 commonName: 'Mahoe',
+                imageUrl: 'http://www.tiritirimatangi.org.nz/images/Plants/MahoeFruit.jpg'
             },
             'Titoki': {
                 commonName: 'Titoki',
+                imageUrl: 'http://www.awanursery.co.nz/wp-content/uploads/2013/05/Alectryon-excelsus-grandis-Titoki-June-2013.jpg'
             },
             'Horoeka': {
                 commonName: 'Horoeka',
+                imageUrl: 'https://cdn.auckland.ac.nz/assets/nzplants/Seed%20Plants%20Flowering/P/Pseudopanax_crassifolius%20Araliaceae/08%20pseudopan_crass_br5(PS).jpg'
             },
             'Rewarewa': {
                 commonName: 'Rewarewa',
+                imageUrl: 'http://www.bushmansfriend.co.nz/site/images/161320.jpg'
             },
             'Karo': {
                 commonName: 'Karo',
+                imageUrl: 'http://www.piha.co.nz/wp-content/uploads/2010/11/karo-N-Piha-march-20111.jpg'
             },
             'Tawa': {
                 commonName: 'Tawa',
+                imageUrl: 'https://www.bimbima.com/wp-content/uploads/old/euphorbia_hirta_1.jpg'
             },
             'Kauri': {
                 commonName: 'Kauri',
+                imageUrl: 'http://m9.i.pbase.com/g6/96/94696/2/72759509.osZKS9IZ.jpg'
             },
             'Akeake': {
                 commonName: 'Akeake',
+                imageUrl: 'http://ketenewplymouth.peoplesnetworknz.info/image_files/0000/0001/5494/Akeake__Dodonaea_viscosa-3.JPG'
             },
             'Tarata': {
                 commonName: 'Tarata',
+                imageUrl: 'http://blog.tepapa.govt.nz/wp-content/uploads/2014/07/Pittosporum_eugenioides_reduced.jpg'
             },
             'Miro': {
                 commonName: 'Miro',
+                imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/PrumnopitysFerruginea.jpg/266px-PrumnopitysFerruginea.jpg'
             },
             'Matai': {
                 commonName: 'Matai',
+                imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/MataiLeaves467.jpg/200px-MataiLeaves467.jpg'
             },
             'Kowhai': {
                 commonName: 'Kowhai',
+                imageUrl: 'https://s-media-cache-ak0.pinimg.com/736x/df/c6/6b/dfc66bfcc746cd549858f6169f77556b.jpg'
             },
             'Mountain Beech': {
                 commonName: 'Mountain Beech',
+                imageUrl: 'http://www.landcareresearch.co.nz/__data/assets/image/0019/50077/nothofagus.jpg'
             },
             'Black Beech': {
                 commonName: 'Mountain Beech',
+                imageUrl: 'http://www.backpack-newzealand.com/nz-photos/data/59/medium/IMG_4114.JPG'
             },
             'Manuka': {
                 commonName: 'Manuka',
+                imageUrl: 'http://www.jjnaturals.co.nz/wp-content/uploads/2013/06/manuka-flowers.jpg'
             },
             'Kanuka': {
                 commonName: 'Kanuka',
+                imageUrl: 'http://www.thearomary.co.nz/wp-content/uploads/2015/02/Kanuka-foliage.jpg'
             },
             'Totara': {
                 commonName: 'Totara',
+                imageUrl: 'http://ketenewplymouth.peoplesnetworknz.info/image_files/0000/0002/0129/totara__Podocarpus_totara-7.JPG'
             },
             'Kahikatea': {
                 commonName: 'Kahikatea',
+                imageUrl: 'http://www.canadaplants.ca/photos/Dacrycarpus-dacrydioides-leaf.jpg'
             },
             'Kamahi': {
                 commonName: 'Kamahi',
+                imageUrl: 'https://static.inaturalist.org/photos/1698216/medium.JPG?1428383273'
             },
             'Porokaiwhiri': {
                 commonName: 'Porokaiwhiri',
+                imageUrl: 'http://www.tiritirimatangi.org.nz/images/Plants/PorokaiwhiriLeaf.JPG'
             },
             'Pukatea': {
                 commonName: 'Pukatea',
+                imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Laurelia_novae-zelandiae_11.JPG/220px-Laurelia_novae-zelandiae_11.JPG'
             },
             'Makomako': {
                 commonName: 'Makomako',
+                imageUrl: 'http://www.teara.govt.nz/files/p-13802-enz.jpg'
             },
             'Rata': {
                 commonName: 'Rata',
+                imageUrl: 'http://ketenewplymouth.peoplesnetworknz.info/image_files/0000/0004/7984/Metrosideros_fulgens_Lake_Ianthe.JPG'
             },
             'Pohutukawa': {
                 commonName: 'Pohutukawa',
+                imageUrl: 'http://www.temarareo.org/Pohutukawa-S6300142C-M.jpg'
             },
             'Kawakawa': {
                 commonName: 'Kawakawa',
+                imageUrl: 'http://www.temarareo.org/47-Rau_Kawakawa_3280003.jpg'
             },
             'Kohekohe': {
                 commonName: 'Kohekohe',
+                imageUrl: 'http://www.tiritirimatangi.org.nz/images/Plants/Kohekohe.JPG'
             },
             'Nikau': {
                 commonName: 'Nikau',
+                imageUrl: 'http://www.virtualoceania.net/newzealand/photos/flora/nikaupalm/nz1022.jpg'
             },
             'Cabbage Tree': {
                 commonName: 'Cabbage Tree',
+                imageUrl: 'http://www.landcareresearch.co.nz/__data/assets/image/0014/41243/ti_kouka_chewing_damage.jpg'
             }
 
         }

@@ -11,10 +11,10 @@
 <body>
     <div class="app-container center" id="app">
 
-        <div class="flex-auto" v-show="!showAnswers">
-            <h1 class="h2 my3">{{questions[currentQuestionIndex].questionText}}</h1>
+        <div class="" v-show="!showAnswers">
+            <h1 class="h2 py3 m0">{{questions[currentQuestionIndex].questionText}}</h1>
 
-            <div class="options">
+            <div class="options mx2">
                 <div class="option card animation-target" v-for="optionIndex in questions[currentQuestionIndex].options">
 
                     <div v-show="!options[optionIndex].result" @click="goTo(options[optionIndex].nextQuestion, options[optionIndex].optionText, currentQuestionIndex)" class="option-btn">
@@ -34,32 +34,22 @@
         </div>
 
         <div v-if="showAnswers" >
-            <h1 class="h2 mb3 mt0">Answer</h1>
-            <div class="results">
-                <div class="result card" v-for="item in result[resultIndex].options">
-                    <div class="result-title">
+            <h1 class="h2 py3 m0">Answer</h1>
+            <div class="results mx2 mb2">
+                <div class="result card mb2" v-for="item in result[resultIndex].options">
+                    <div >
                         <img class="img-responsive" src="{{resultOptions[item].imageUrl}}">
-                        {{resultOptions[item].commonName}}
+                        <div class="result-title">{{resultOptions[item].commonName}}</div>
                     </div>
                 </div>
             </div>
         </div>
-<!--
-        <ul class="breadcrumbs">
-            <li v-for="item in breadcrumbs">{{ item }}</li>
-        </ul>
 
-
--->
-        <div class="actions mt-auto flex justify-center">
-            <button v-show="showPrevious" @click="goBack()" class="btn btn-default">Go back</button>
-            <a v-show="currentQuestionIndex != '1'" href="app.html" class="btn btn-default">Start Again</a>
+        <div class="actions flex justify-center mx3 py2">
+            <button v-show="showPrevious" @click="goBack()" class="btn btn-default mr1">Go back</button>
+            <a v-show="currentQuestionIndex != '1'" href="app.html" class="btn btn-default ml1">Start Again</a>
         </div>
 
-<!--             <div v-if="previousIndex">Previous Index: {{ previousIndex }}</div>
-        <div>Current Index: {{currentQuestionIndex}}</div>
-        <div>Show Go Back btn: {{ showPrevious }}</div>
-        <div>Show Answers: {{ showAnswers }}</div> -->
     </div>
 
 

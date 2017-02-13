@@ -1203,7 +1203,7 @@ textarea {
   border-radius: 0;
   background: #333;
   font-weight: 500;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   border: none;
   font-size: 16px;
@@ -1214,8 +1214,15 @@ textarea {
     background: #000; }
 
 body {
-  background-color: #ddd;
+  background-color: #F7F7F7;
   font-family: "Playfair Display", Georgia, "Times New Roman", Times, serif; }
+
+h1, h2 {
+  font-weight: normal; }
+
+img {
+  max-width: 100%;
+  height: auto; }
 
 .mt-auto {
   margin-top: auto; }
@@ -1226,102 +1233,31 @@ body {
 .app-container {
   max-width: 500px;
   margin-left: auto;
-  margin-right: auto;
-  background: #fff;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+  margin-right: auto; }
 
 .option-btn {
   padding: 15px 20px;
-  background: #333;
-  color: #fff;
+  background: #fff;
+  color: #333;
   margin-bottom: 5px;
-  border: 1px solid #eee;
+  border: 1px solid #ddd;
   font-size: 20px; }
   .option-btn:hover {
     cursor: pointer;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.05);
     border-color: #ddd; }
 
-.actions {
-  background: green; }
-  .actions .btn {
-    -webkit-box-flex: 1;
-        -ms-flex: auto;
-            flex: auto; }
+.actions .btn {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto; }
 
-.option:nth-child(2) {
-  -webkit-animation-delay: 100ms !important;
-          animation-delay: 100ms !important; }
+.result {
+  background: #fff;
+  border: 1px solid #ddd; }
 
-.option:nth-child(3) {
-  -webkit-animation-delay: 150ms !important;
-          animation-delay: 150ms !important; }
-
-.option:nth-child(4) {
-  -webkit-animation-delay: 200ms !important;
-          animation-delay: 200ms !important; }
-
-.option:nth-child(5) {
-  -webkit-animation-delay: 250ms !important;
-          animation-delay: 250ms !important; }
-
-.option:nth-child(6) {
-  -webkit-animation-delay: 300ms !important;
-          animation-delay: 300ms !important; }
-
-.option:nth-child(7) {
-  -webkit-animation-delay: 350ms !important;
-          animation-delay: 350ms !important; }
-
-.option:nth-child(8) {
-  -webkit-animation-delay: 400ms !important;
-          animation-delay: 400ms !important; }
-
-.option:nth-child(9) {
-  -webkit-animation-delay: 450ms !important;
-          animation-delay: 450ms !important; }
-
-.option:nth-child(10) {
-  -webkit-animation-delay: 500ms !important;
-          animation-delay: 500ms !important; }
-
-.animation-target {
-  -webkit-animation: fadeIn 100ms ease both;
-          animation: fadeIn 100ms ease both; }
-
-@-webkit-keyframes animation {
-  0% {
-    -webkit-transform: translate3D(0, -100%, 0);
-            transform: translate3D(0, -100%, 0); }
-  100% {
-    -webkit-transform: none;
-            transform: none; } }
-
-@keyframes animation {
-  0% {
-    -webkit-transform: translate3D(0, -100%, 0);
-            transform: translate3D(0, -100%, 0); }
-  100% {
-    -webkit-transform: none;
-            transform: none; } }
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
+.result-title {
+  font-size: 18px;
+  padding: 10px; }
 
 /*# sourceMappingURL=style.css.map */
